@@ -1,17 +1,15 @@
 div(class='ed-container')
-	div(class='ed-item')
-		h2 Contact
-div(class='ed-grid m-grid-2 lg-grid-4 row-gap')
-	ul.data-list
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 1
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 2
-	ul.data-list
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 3
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 4
-	ul.data-list
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 5
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 6
-	ul.data-list
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 7
-		li: i(class='far fa-envelope'): a(href='https://www.google.com/' target='_blank' class='foot-icon') Link 8
+	div(class='ed-item ')
 		
+div(class='ed-grid m-grid-2 lg-grid-4 row-gap')
+		-for(i = 0; i < footer_Elements.length; i++)
+			ul(class="s-cols-1")= footer_Elements[i].tittle
+				-for(j = 0; j < footer_Elements[i].hijos.length; j++)
+					li(class=""): a(href=`${footer_Elements[i].hijos[j].link}`)= footer_Elements[i].hijos[j].name
+					
+			//- console.log(footer_Elements[i].tittle )
+			//- - console.log(footer_Elements[i].hijos.length)
+			//- - console.log(footer_Elements[i].tittle )
+				
+		
+			//- console.log(footer_Elements[i].tittle )

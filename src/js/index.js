@@ -1,8 +1,8 @@
 import {topNav} from './modules/topNav'
 import {searchFilter} from './modules/searchFilter'
-import {swDetecter} from './modules/swDetecter';
+// import {swDetecter} from './modules/swDetecter';
 (()=>{
-	swDetecter();
+	// swDetecter();
 	topNav();
 	if (document.body.classList.contains('home')) {
 		// functions here

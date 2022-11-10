@@ -5,10 +5,9 @@ var _topNav = require('./modules/topNav');
 
 var _searchFilter = require('./modules/searchFilter');
 
-var _swDetecter = require('./modules/swDetecter');
-
+// import {swDetecter} from './modules/swDetecter';
 (function () {
-	(0, _swDetecter.swDetecter)();
+	// swDetecter();
 	(0, _topNav.topNav)();
 	if (document.body.classList.contains('home')) {
 		// functions here
@@ -18,7 +17,7 @@ var _swDetecter = require('./modules/swDetecter');
 	}
 })();
 
-},{"./modules/searchFilter":2,"./modules/swDetecter":3,"./modules/topNav":4}],2:[function(require,module,exports){
+},{"./modules/searchFilter":2,"./modules/topNav":3}],2:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -46,22 +45,6 @@ var searchFilter = exports.searchFilter = function searchFilter() {
 };
 
 },{}],3:[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-var swDetecter = exports.swDetecter = function swDetecter() {
-	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('./sw.js').then(function (reg) {
-			return console.log('Registro de SW exitoso', reg);
-		}).catch(function (err) {
-			return console.warn('Error al tratar de registrar el sw', err);
-		});
-	}
-};
-
-},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
