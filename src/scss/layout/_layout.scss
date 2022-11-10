@@ -24,7 +24,7 @@ body {
 .main-header{}
 .main-container{}
 .main-footer {
-	background 		: $color-first;
+	background 		: var(--gray-color);
 	color      		: #FFF;
 	padding    		: 2rem 0;
 	font-size  		: fontSize(small);

@@ -1,10 +1,21 @@
 nav(class='top-nav')
 	div(class='top-nav__container')
-		a(href='./', class='top-nav__link')
-			img(src='assets/img/img1.jpg', alt='', class='top-nav__logo')
-		ul(class='top-nav__menu')
-			li(class='top-nav__li'): a(href='./', class='top-nav__anchor') Home
-			li(class='top-nav__li'): a(href='page2.html', 	class='top-nav__anchor') page 2
-		button(type='button', class='top-nav__mb-iconMenu hamburger hamburger--slider-r')
-			span.hamburger-box
-				span.hamburger-inner
+		div(class='top-nav__align')
+			a(href='./', class='top-nav__link')
+				img(src='https://betfran.com/assets/images/betfran/sb-logo.png', alt='', class='top-nav__logo')
+		div
+			ul(class='top-nav__menu')
+				li(class='top-nav__li'): a(href='page2.html' class='top-nav__anchor') Inicio
+				li(class='top-nav__li'): a(href='page2.html' class='top-nav__anchor') Cajero
+				li(class='top-nav__li'): a(href='page2.html' class='top-nav__anchor') Deportes
+				li(class='top-nav__li'): a(href='page2.html' class='top-nav__anchor') Concursos
+				li(class='top-nav__li'): a(href='page2.html' class='top-nav__anchor') Apuestas virtuales
+				li(class='top-nav__li'): a(href='page2.html' class='top-nav__anchor') Casino
+				li(class='top-nav__li'): a(href='page2.html' class='top-nav__anchor') Bonos
+		div(class='top-nav__align') 	
+			button(class="btn btn__login") REGISTRATE
+			button(class="btn btn__register") INICIAR SESIÓN 
+				img(class="btn__user",  src="https://cdn-icons-png.flaticon.com/128/456/456212.png", alt="user")
+			button(type='button', class='top-nav__mb-iconMenu hamburger hamburger--slider-r')
+						span.hamburger-box
+							span.hamburger-inner

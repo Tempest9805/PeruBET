@@ -1,0 +1,27 @@
+.alinear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton {
+    color: var(--second-color);
+    padding: .8rem 1rem;
+    border-radius: 3px;
+    font-weight: bold;
+	font-size: 14px;
+
+    &__middle {
+        background-color: var(--second-color);
+        color: var(--color-first);
+        border: 1px solid var(--color-first);
+		display: flex;
+		align-items: center;
+    }
+    &__middle:hover {
+        cursor: pointer;
+        background-color: var(--rojo);
+        color: var(--second-color);
+        border: 1px solid var(--rojo);
+    }
+}
