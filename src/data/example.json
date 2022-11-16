@@ -176,22 +176,21 @@
 				"tittle"		: "Follow us",	
 				"hijos"			: [
 					{
-						"icon": "URL",
+						"icon": "https://cdn-icons-png.flaticon.com/512/1384/1384005.png",
 						"name": "Facebook",
 						"link": "xxx"
 					},
 					{
-						"icon": "URL",
+						"icon": "https://cdn-icons-png.flaticon.com/512/4494/4494465.png",
 						"name": "Twitter",
 						"link": "xxx"
 					},
 					{
-						"icon": "URL",
+						"icon": "https://cdn-icons-png.flaticon.com/512/87/87390.png",
 						"name": "Instagram",
 						"link": "xxx"
 					}
 				]
 			}
-			
 		]
 }

@@ -1,15 +1,15 @@
-div(class='ed-container')
-	div(class='ed-item ')
-		
-div(class='ed-grid m-grid-2 lg-grid-4 row-gap')
-		-for(i = 0; i < footer_Elements.length; i++)
-			ul(class="s-cols-1")= footer_Elements[i].tittle
-				-for(j = 0; j < footer_Elements[i].hijos.length; j++)
-					li(class=""): a(href=`${footer_Elements[i].hijos[j].link}`)= footer_Elements[i].hijos[j].name
-					
-			//- console.log(footer_Elements[i].tittle )
-			//- - console.log(footer_Elements[i].hijos.length)
-			//- - console.log(footer_Elements[i].tittle )
-				
-		
-			//- console.log(footer_Elements[i].tittle )
+div(class='ed-container footer')
+	div(class='ed-grid m-grid-3 lg-grid-5 row-gap')
+			-for(i = 0; i < footer_Elements.length; i++)
+				ul(class="s-cols-1 footer__titulo")= footer_Elements[i].tittle
+					-for(j = 0; j < footer_Elements[i].hijos.length; j++)
+						-if(footer_Elements[i].hijos[j].icon)
+							li(class='footer__li')
+								img(class="social" src=`${footer_Elements[i].hijos[j].icon}`, alt="icon") 
+								a(class="footer__li" href=`${footer_Elements[i].hijos[j].link}`)= footer_Elements[i].hijos[j].name
+						-else 	
+							li(class='footer__li'): a(class="footer__li" href=`${footer_Elements[i].hijos[j].link}`)= footer_Elements[i].hijos[j].name
+	div(class='footer__linea')
+	div(class='ed-grid m-grid-2 lg-grid-2 row-gap footer__bajo')
+		a 2022&copy;perubet.pe
+		a(href="") Click to view all Pay Methods

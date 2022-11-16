@@ -5,19 +5,52 @@ var _topNav = require('./modules/topNav');
 
 var _searchFilter = require('./modules/searchFilter');
 
+var _carousel_netflix = require('./modules/carousel_netflix');
+
 // import {swDetecter} from './modules/swDetecter';
 (function () {
 	// swDetecter();
+	(0, _carousel_netflix.carousel_netflix)('.accordion.v1', true);
 	(0, _topNav.topNav)();
 	if (document.body.classList.contains('home')) {
 		// functions here
+
 	} else if (document.body.classList.contains('portfolio')) {
 		// functions here
 		(0, _searchFilter.searchFilter)();
 	}
 })();
 
-},{"./modules/searchFilter":2,"./modules/topNav":3}],2:[function(require,module,exports){
+},{"./modules/carousel_netflix":2,"./modules/searchFilter":3,"./modules/topNav":4}],2:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var carousel_netflix = exports.carousel_netflix = function carousel_netflix(elem, option) {
+    document.addEventListener('click', function (e) {
+        if (!e.target.matches(elem + ' .a-btn')) return;else {
+            if (!e.target.parentElement.classList.contains('active')) {
+
+                if (option == true) {
+                    console.log('yameteee');
+                    var elementList = document.querySelectorAll(elem + ' .a-container');
+                    Array.prototype.forEach.call(elementList, function (e) {
+                        e.classList.remove('active');
+                    });
+                }
+                e.target.parentElement.classList.add('active');
+            } else {
+                e.target.parentElement.classList.remove('active');
+            }
+        }
+    });
+};
+
+// carousel_netflix('.accordion.v1', true);
+// carousel_netflix('.accordion.v2', false);
+
+},{}],3:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -44,7 +77,7 @@ var searchFilter = exports.searchFilter = function searchFilter() {
 	fnFilter(document.getElementById('searchInput'), '.class-item__fragment', '.class-item');
 };
 
-},{}],3:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

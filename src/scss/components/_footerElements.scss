@@ -1,0 +1,38 @@
+.footer {
+    & ul{
+        font-size: 14px;
+        font-weight: 700;
+        
+    }
+    &__li{
+        list-style: none ;
+        font-weight: 200;
+        color: gray;
+        display: flex;
+        align-items: center;
+    }
+    &__bajo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        color: gray;
+        a{
+            color: gray;
+        }
+    }
+    &__linea{
+        border-top: 2px solid gray;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        width: 100%;
+    }
+    .social{
+        width: 15px;
+        height: 15px;
+        margin-right: .5rem;
+        filter: invert(1);
+    }
+}
