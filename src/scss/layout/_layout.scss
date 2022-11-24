@@ -24,9 +24,9 @@ body {
 .main-header{}
 .main-container{}
 .main-footer {
-	background 		: var(--gray-color);
+	background 		: var(--color-first);
 	color      		: #FFF;
-	padding    		: 2rem 0;
+	padding    		: 1rem 0;
 	font-size  		: fontSize(small);
 	margin-top 		: auto;
 }

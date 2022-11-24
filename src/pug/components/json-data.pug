@@ -16,8 +16,3 @@ section(class='ed-container item-search')
 		input(type='search', id='searchInput', placeholder='search')
 div(class='ed-container')
 	div(class='ed-item')
-
-div(class='ed-grid m-grid-2 l-grid-3 lg-grid-4 row-gap l-big-section')
-	-for(var i = 0; i < casos.length ; i++)
-		-var caso = casos[i]
-		+card(caso.img, caso.title, caso.source, caso.live)

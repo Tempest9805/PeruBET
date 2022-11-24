@@ -36,12 +36,12 @@
 		display: block;
 		min-width: 101px;
 		min-height: 82.72px;
-		@include from(xl){
+		@include from(lg){
 			height: 1.4rem;
 		}
 	}
 	&__menu{
-		@include fromTo(s,xl){
+		@include fromTo(s,lg){
 			position 		: fixed;
 			padding 		: 19px 10px 0px 24px;
 			height 			: 100vh;
@@ -55,14 +55,14 @@
 				right 		: 0;
 			}
 		}
-		@include from(xl){
+		@include from(lg){
 			align-self: center;
 			margin: 0;
 			padding: 0;
 		}
 	}
 	&__li{
-		@include fromTo(s,xl){
+		@include fromTo(s,lg){
 			display: block;
 			border-bottom: 1px solid rgb(186, 186, 186);//linea intermedia del menu hamburger
 			padding: 10px 0;
@@ -80,10 +80,10 @@
 	}
 	&__anchor{
 		color: black;
-		@include fromTo(s,xl){
+		@include fromTo(s,lg){
 			display: block;
 		}
-		@include from(xl){
+		@include from(lg){
 			border-right: 1px solid white;
 			padding-right: .5rem;
 		}
@@ -112,7 +112,7 @@
 			outline: 5px auto -webkit-focus-ring-color;
 			outline-offset: -2px;
 		}
-		@include from(xl){
+		@include from(lg){
 			display: none;
 		}
 	}

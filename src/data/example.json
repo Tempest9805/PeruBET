@@ -1,101 +1,14 @@
 {
-	"casos":
+	"banners":
 		[
 			{
-				"img"		: "assets/img/img1.jpg",	
-				"title"		: "Image 1",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
+				"img"		: "assets/img/Desktop/Logo-perubet.svg"	
+			}
+		],
+	"upperFooter":
+		[
 			{
-				"img"		: "assets/img/img2.jpg",	
-				"title"		: "Image 2",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img3.jpg",	
-				"title"		: "Image 3",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img4.jpg",	
-				"title"		: "Image 4",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img1.jpg",	
-				"title"		: "Image 1",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img2.jpg",	
-				"title"		: "Image 2",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img3.jpg",	
-				"title"		: "Image 3",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img4.jpg",	
-				"title"		: "Image 4",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img1.jpg",	
-				"title"		: "Image 1",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img2.jpg",	
-				"title"		: "Image 2",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img3.jpg",	
-				"title"		: "Image 3",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img4.jpg",	
-				"title"		: "Image 4",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img1.jpg",	
-				"title"		: "Image 1",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img2.jpg",	
-				"title"		: "Image 2",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img3.jpg",	
-				"title"		: "Image 3",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
-			},
-			{
-				"img"		: "assets/img/img4.jpg",	
-				"title"		: "Image 4",
-				"source"	: "https://jazzsports.ag/",
-				"live"		: "https://jazzsports.ag/en/sports-handicapping-fantasy-contests"
+				"img"		: "assets/img/Desktop/Logo-perubet.svg"	
 			}
 		],
 		"footer_Elements":
@@ -105,15 +18,18 @@
 				"hijos"			: [
 					{
 						"name": "Preguntas frecuentes",
-						"link": "https://www.google.com/?hl=es"
+						"link": "https://www.google.com/?hl=es",
+						"nameClass": "footer__social"
 					},
 					{
 						"name": "Tutoriales",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
 					},
 					{
 						"name": "Blog",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
 					}
 				]
 			},
@@ -122,15 +38,18 @@
 				"hijos"			: [
 					{
 						"name": "Recargas",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
 					},
 					{
 						"name": "Retiros",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
 					},
 					{
 						"name": "Bonos y promociones",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
 					}
 				]
 			},
@@ -139,19 +58,23 @@
 				"hijos"			: [
 					{
 						"name": "Términos y Condiciones",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
 					},
 					{
 						"name": "Politicas de Privacidad",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
 					},
 					{
 						"name": "Politica de Reclamos",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
 					},
 					{
 						"name": "Politica de Anti-lavado",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
 					}
 				]
 			},
@@ -160,15 +83,18 @@
 				"hijos"			: [
 					{
 						"name": "De la casa",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
 					},
 					{
 						"name": "Deportes",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
 					},
 					{
 						"name": "Casino",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
 					}
 				]
 			},
@@ -178,17 +104,37 @@
 					{
 						"icon": "https://cdn-icons-png.flaticon.com/512/1384/1384005.png",
 						"name": "Facebook",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
 					},
 					{
 						"icon": "https://cdn-icons-png.flaticon.com/512/4494/4494465.png",
 						"name": "Twitter",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
 					},
 					{
 						"icon": "https://cdn-icons-png.flaticon.com/512/87/87390.png",
 						"name": "Instagram",
-						"link": "xxx"
+						"link": "xxx",
+						"nameClass": "footer__social"
+					}
+				]
+			},
+			{
+				"tittle"		: "",	
+				"hijos"			: [
+					{
+						"icon": "assets/img/Desktop/logo-curacao-egaming.png",
+						"name": "",
+						"link": "xxx",
+						"nameClass": "footer__finalSocial"
+					},
+					{
+						"icon": "assets/img/Desktop/+18.svg",
+						"name": "",
+						"link": "xxx",
+						"nameClass": "footer__finalSocial"
 					}
 				]
 			}
