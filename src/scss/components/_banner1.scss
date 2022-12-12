@@ -1,0 +1,28 @@
+.main-banner1 {
+    //     background: url(https://ochobets.com/wp-content/uploads/Game_5.jpg);
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     background-position: center;
+    // @include from(l){
+    //     background: url(https://phantom-marca.unidadeditorial.es/fe71ab69fa05e056a767f573c1cd0e6e/resize/1320/f/jpg/assets/multimedia/imagenes/2022/10/03/16648202656055.jpg);
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     background-position: center;
+    // }
+    &__img{
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &__button{
+        
+    }
+    &__18{
+        width: 40px;
+        height: 40px;
+    }
+	.main-banner1__data {
+		position 			: relative;
+	}
+}

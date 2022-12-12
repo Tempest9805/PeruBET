@@ -1,12 +1,13 @@
-.top-nav{
+.bottom-nav{
 	
 	background    	: var(--second-color);
-	position      	: relative;
+	position      	: fixed;
 	top           	: 0;
 	width         	: 100%;
 	left          	: 0;
 	display 		: flex;
 	justify-content : center;
+	z-index			: 1;
 	color			: rgb(0, 0, 0);
 
 	&__container{
@@ -15,7 +16,7 @@
 		justify-content : space-between;
 		height        	: var(--header-height);
 		width: 100%;
-		max-width: 1300px;
+		max-width: 1400px;
 		padding: 0 15px;
 	}
 	&__align{
@@ -30,20 +31,14 @@
 	}
 	&__logo{
 		padding-left: 1rem;
-		height: auto;
+		height: 1.1rem;
 		width: auto;
 		display: block;
 		min-width: 101px;
 		min-height: 82.72px;
-		@include from(m){
-			height: 2rem;
-			width: 200px;
+		@include from(lg){
+			height: 1.4rem;
 		}
-		@include fromTo(s,m){
-			width: 80px;
-			height: 50px;
-		}
-		
 	}
 	&__menu{
 		@include fromTo(s,lg){
@@ -131,22 +126,17 @@
     margin: 0 0.5rem;
     font-weight: bold;
 	font-size: 14px;
-	@include fromTo(s,sm){
+	@include fromTo(s,m){
 		display: none;
+		
 	}
-	@include fromTo(s,l){
-		font-size: 10px;
-		padding: .1rem .1rem;
-	}
-	
+
     &__login {
         background-color: var(--rojo);
         border: 1px solid var(--rojo);
         color: var(--second-color);
 		padding: .5rem 1rem;
-		@include fromTo(s,l){
-			padding: .5rem .3rem;
-		}
+
     }
     &__register {
         background-color: var(--second-color);
@@ -154,7 +144,7 @@
         border: 1px solid var(--color-first);
 		display: flex;
 		align-items: center;
-		@include fromTo(s,sm){
+		@include fromTo(s,m){
 			display: none;
 		}
 		
@@ -163,10 +153,6 @@
 		margin-left: .5em;
         width: 18px;
 		height: 18px;
-		@include fromTo(s,l){
-			width: 10px;
-			height: 10px;
-		}
     }
     &__login:hover {
         cursor: pointer;

@@ -14,8 +14,8 @@ strong {
 }
 
 body {
-	margin         	: var(--header-height) 0 0 0;
-	min-height     	: calc(100vh - var(--header-height));
+	// margin         	: var(--header-height) 0 0 0;
+	// min-height     	: calc(100vh - var(--header-height));
 	background 		: var(--body-bg);
 	display        	: flex;
 	flex-direction 	: column;
@@ -26,7 +26,7 @@ body {
 .main-footer {
 	background 		: var(--color-first);
 	color      		: #FFF;
-	padding    		: 1rem 0;
+	padding    		: 0rem 0;
 	font-size  		: fontSize(small);
 	margin-top 		: auto;
 }

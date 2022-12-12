@@ -1,4 +1,42 @@
 {
+	"middleNav_Elements":
+		[
+			{
+				"link" 		:"#",
+				"imagen"	: "assets/img/Desktop/round.png",	
+				"texto"		: "Deportes"
+			},
+			{
+				"link" 		:"#",
+				"imagen"	: "assets/img/Desktop/round.png",	
+				"texto"		: "Caballos"
+			},
+			{
+				"link" 		:"#",
+				"imagen"	: "assets/img/Desktop/round.png",	
+				"texto"		: "Casino"
+			},
+			{
+				"link" 		:"#",
+				"imagen"	: "assets/img/Desktop/round.png",	
+				"texto"		: "Apuestas en vivo"
+			},
+			{
+				"link" 		:"#",
+				"imagen"	: "assets/img/Desktop/round.png",	
+				"texto"		: "Apuestas virtuales"
+			},
+			{
+				"link" 		:"#",
+				"imagen"	: "assets/img/Desktop/round.png",	
+				"texto"		: "Concurso"
+			},
+			{
+				"link" 		:"#",
+				"imagen"	: "assets/img/Desktop/round.png",	
+				"texto"		: "Banca"
+			}
+		],
 	"banners":
 		[
 			{

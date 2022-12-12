@@ -1,0 +1,158 @@
+.middlenav{
+	
+	background    	: aqua;
+	width         	: 100%;
+	display 		: flex;
+	justify-content : center;
+	color			: rgb(0, 0, 0);
+	// position		: relative;
+	height			: 9rem;
+	z-index: 1;
+	.titulos_middleNav{
+		@include fromTo(s,lg){
+			position: absolute;
+    		left: 28px;
+			color: aliceblue;
+			
+		}
+	}
+
+	&__container{
+		display 		: flex;
+		align-items     : center;
+		justify-content : center;
+		height        	: var(--header-height);
+		width           : 100%;
+		max-width       : 1300px;
+		padding         : 0 15px;
+		gap: 1rem;
+	}
+	&__align{
+		display: flex;
+		flex-wrap: nowrap;
+		padding-right: 1rem;
+	}
+
+	&__link{
+		align-self: center;
+		
+	}
+	&__logo{
+		padding-left: 1rem;
+		height: 1.1rem;
+		width: auto;
+		display: block;
+		min-width: 101px;
+		min-height: 82.72px;
+		@include from(lg){
+			height: 1.4rem;
+		}
+	}
+	&__menu{
+		text-align: center;
+		@include fromTo(s,lg){
+            z-index: 1;
+			position 		: fixed;
+			padding 		: 50px 30px;
+			height 			: 100vh;
+			width 			: 375px;
+			background 		: rgb(12, 0, 0); //color del menu desplegable
+			transition 		: right .5s;
+			overflow-y 		: auto;
+			top 			: 0;
+			right 			: -375px;
+			display: grid;
+			grid-template-columns: 185px 185px;
+			
+			&.show-middlenav{
+				left 		: 0;
+			}
+		}
+		@include from(lg){
+			align-self: center;
+			margin: 0;
+			padding: 0;
+		}
+	}
+	&__li{
+		@include fromTo(s,lg){
+			display: block;
+			// border-bottom: 1px solid rgb(186, 186, 186);//linea intermedia del menu hamburger
+			padding: 10px 0;
+			margin: 0;
+			
+		}
+		margin-left: 1em;
+		list-style-type: none;
+		display: inline-block;
+		position: relative;
+		z-index: 1;
+		top: -2rem;
+		font-weight: bold;
+	}
+	.w{
+		@include fromTo(s,lg){
+            top: -32px;
+		}
+		top: -6px;
+	}
+	&__anchor:hover{
+		text-decoration: none;
+		color: var(--rojo);
+	}
+	&__anchor{
+		color: black;
+		@include fromTo(s,lg){
+			display: block;
+		}
+		@include from(lg){
+			
+		}
+	}
+
+	&__mb-iconMenu {
+		position: relative;
+		align-self: center;
+		top: 3px;
+		padding: 0;
+		span{
+			&.hamburger-inner{
+				background: rgb(0, 0, 0);
+				&::after{}
+				&::before{}
+				&::after, &::before{
+					background: rgb(0, 0, 0);
+				}
+			}
+		}
+		&:focus {
+			outline: 0 !important;
+			-moz-outline-style: none !important;
+			outline: thin dotted;
+			outline: 5px auto -webkit-focus-ring-color;
+			outline-offset: -2px;
+		}
+		@include from(lg){
+			display: none;
+		}
+	}
+	.logosMiddleNav{
+		height: 8rem;
+		width: 8rem;
+	}
+	
+	.text{
+		position:	relative;
+		color: black;
+		font-weight: bold;
+		top: -1rem;
+		display: flex;
+		justify-content: center;
+	}
+	.android{
+		@include from(lg){
+			display: none;
+		}
+	}
+}
+

@@ -3,6 +3,8 @@
 
 var _topNav = require('./modules/topNav');
 
+var _middleNav = require('./modules/middle-nav');
+
 var _searchFilter = require('./modules/searchFilter');
 
 var _carousel_netflix = require('./modules/carousel_netflix');
@@ -11,6 +13,7 @@ var _carousel_netflix = require('./modules/carousel_netflix');
 (function () {
 	// swDetecter();
 	(0, _topNav.topNav)();
+	(0, _middleNav.middleNav)();
 	if (document.body.classList.contains('home')) {
 		// functions here
 
@@ -20,10 +23,31 @@ var _carousel_netflix = require('./modules/carousel_netflix');
 	}
 })();
 
-},{"./modules/carousel_netflix":2,"./modules/searchFilter":3,"./modules/topNav":4}],2:[function(require,module,exports){
+},{"./modules/carousel_netflix":2,"./modules/middle-nav":3,"./modules/searchFilter":4,"./modules/topNav":5}],2:[function(require,module,exports){
 "use strict";
 
 },{}],3:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var middleNav = exports.middleNav = function middleNav() {
+	var myFunction = function myFunction() {
+		document.querySelector('.hamburger').addEventListener('click', function (e) {
+			e.preventDefault();
+			[].map.call(document.querySelectorAll('.hamburger'), function (el) {
+				el.classList.toggle('is-active');
+			});
+			[].map.call(document.querySelectorAll('.middlenav__menu'), function (el) {
+				el.classList.toggle('show-middlenav');
+			});
+		});
+	};
+	myFunction();
+};
+
+},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -50,7 +74,7 @@ var searchFilter = exports.searchFilter = function searchFilter() {
 	fnFilter(document.getElementById('searchInput'), '.class-item__fragment', '.class-item');
 };
 
-},{}],4:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

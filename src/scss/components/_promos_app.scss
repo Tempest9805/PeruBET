@@ -1,0 +1,33 @@
+.banners{
+    z-index: -1;
+    a:hover{
+        text-decoration: none;
+    }
+    .text1{
+        position: absolute;
+        top: 30px;
+        left: 25px;
+        color: black;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    .text2{
+        position: absolute;
+        bottom: 5rem;
+        left: 25px;
+        color: aqua;
+    }
+    &__1{
+        position: relative;
+        background: red;
+        border-radius: 15px;
+        height: 13rem; 
+    }
+
+    &__2{
+        position: relative;
+        background: green;
+        border-radius: 15px;
+        height:13rem;
+    }
+}
